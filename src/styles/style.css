@@ -142,3 +142,23 @@ ul{
 #dragao{
     background-color: #C29791;
 }
+
+
+@media only screen and (max-width: 700px){
+    main{
+        flex-direction: column;
+    }
+    .pokedex{
+        margin-right: 0;
+    }
+    .lista{
+        max-width: 75vw;
+    }
+    .lista ul{
+        display: flex;
+        overflow-x: scroll;
+    }
+    .lista ul li{
+        margin-right: 1rem;
+    }
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    pointer-events: none;
+}
+
+main{
+    height: 100vh;
+    overflow: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D8DEE6;
+}
+
+.pokedex{
+    display: flex;
+    gap: 30px;
+    margin-right: 2rem;
+}
+
+.pokedex-card{
+    display: none;
+}
+
+.pokedex-card .card-top{
+    border-radius: 20px;
+    padding: 30px 40px 0;
+    background-color: red;
+}
+.pokedex-card .card-details{
+    display: flex;
+    color: #FFF;
+    justify-content: space-between;
+}
+
+.pokedex-card .card-image{
+    width:  20rem;
+    height: 20rem;
+}
+.pokedex-card img{
+    width: auto;
+    max-height: 100%;
+}
+.pokedex-card .name{
+    margin-bottom: .5rem;
+}
+
+.pokedex-card .type{
+    text-transform: lowercase;
+    font-size: .8rem;
+    border-radius: 20px;
+    padding: .2rem 1rem;
+    background-color: #FFF;
+}
+
+.pokedex-card .card-info{
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 2rem 3rem;
+    margin-top: -5rem;
+    background-color: #FFF;
+}
+
+.pokedex-card .card-info h3{
+    border-bottom: 1px solid #D8DEE6;
+    margin-bottom: .5rem;
+}
+
+.pokedex-card .card-info ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info .card-status, .card-info .card-skills{
+    width: 45%;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+
+.pokedex-card.ativo{
+    display: block;
+}
+
+.lista{
+    max-width: 12rem;
+}
+.lista .pokemon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: #FFF;
+    background-color: #6A7178;
+    cursor: pointer;
+    padding: 0 .5rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: .15s ease-in-out;
+}
+.lista .pokemon:hover{
+    transform: scale(1.07);
+}
+.lista .pokemon img{
+    width: 25%;
+    border-radius: 50%;
+}
+.lista .pokemon.ativo{
+    background-color: #FA6668;
+}
+
+#eletrico{
+    background-color: #FCC719;
+}
+#fogo{
+    background-color: #ED8A8B;
+}
+#agua{
+    background-color: #76BEFE;
+}
+#grama{
+    background-color: #49D0B0;
+}
+#trevas{
+    background-color: #BA68C8;
+}
+#dragao{
+    background-color: #C29791;
+}
